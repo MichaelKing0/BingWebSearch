@@ -4,6 +4,8 @@ namespace MichaelKing0\BingWebSearch;
 
 class BingSearch extends WebSearch
 {
+    protected $amountOfResults = 1;
+
     public function __construct($accountKey, $handler = null)
     {
         parent::__construct($handler);
@@ -13,12 +15,20 @@ class BingSearch extends WebSearch
         ];
     }
 
+    public function setAmountOfResults($amount)
+    {
+        $this->amountOfResults = $amount;
+        return $this;
+    }
+
     public function search($phrase, $urlPattern = null, $inTitle = null, $notInTitle = null, $notInUrlPattern = null)
     {
         $url = 'https://api.datamarket.azure.com/Bing/Search/v1/Web?Query=%27'. urlencode($phrase) .'%27';
 
         $response = $this->makeRequest($url);
         $xml = simplexml_load_string($response);
+
+        $results = [];
 
         foreach ($xml->entry as $entry) {
             $data = $entry->content->children('http://schemas.microsoft.com/ado/2007/08/dataservices/metadata')[0];
@@ -46,7 +56,11 @@ class BingSearch extends WebSearch
             }
 
             // if we make it this far, this is the entry we want. Return the URL
-            return (string)$data->Url;
+            $results[] = (string)$data->Url;
+        }
+
+        if (count($results)) {
+            return ($this->amountOfResults == 1) ? $results[0] : array_splice($results, 0, $this->amountOfResults);
         }
 
         return null;

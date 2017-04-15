@@ -61,4 +61,15 @@ class BingSearchTest extends TestCase
             $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', '/^[0-9]$/', null, 'Iceland')
         );
     }
+
+    public function testSearchWithMoreResults()
+    {
+        $result = $this->bingSearch->setAmountOfResults(5)->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile');
+
+        $this->assertEquals('http://www.transfermarkt.co.uk/island/startseite/verein/3574', $result[0]);
+        $this->assertEquals('http://www.transfermarkt.co.uk/iceland-u21/startseite/verein/22414', $result[1]);
+        $this->assertEquals('http://www.transfermarkt.co.uk/iceland-u17/startseite/verein/26034', $result[2]);
+        $this->assertEquals('http://www.transfermarkt.co.uk/', $result[3]);
+        $this->assertEquals('http://www.transfermarkt.co.uk/island-u19/startseite/verein/25785', $result[4]);
+    }
 }
