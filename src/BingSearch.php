@@ -6,6 +6,10 @@ class BingSearch extends WebSearch
 {
     // amount of results the client wants returned
     protected $amountOfResults = 1;
+    /** @var \Closure|null */
+    protected $urlFilter;
+    /** @var \Closure|null */
+    protected $titleFilter;
 
     // api settings
     protected $count = 10;
@@ -35,6 +39,18 @@ class BingSearch extends WebSearch
     public function setOffset($offset)
     {
         $this->offset = $offset;
+        return $this;
+    }
+
+    public function setUrlFilter(\Closure $filter)
+    {
+        $this->urlFilter = $filter;
+        return $this;
+    }
+
+    public function setTitleFilter(\Closure $filter)
+    {
+        $this->titleFilter = $filter;
         return $this;
     }
 
@@ -80,6 +96,18 @@ class BingSearch extends WebSearch
             }
             if ($notInUrlPattern) {
                 if (preg_match($notInUrlPattern, $url)) {
+                    continue;
+                }
+            }
+
+            if ($this->urlFilter) {
+                if (!call_user_func($this->urlFilter, $url)) {
+                    continue;
+                }
+            }
+
+            if ($this->titleFilter) {
+                if (!call_user_func($this->titleFilter, $title)) {
                     continue;
                 }
             }
