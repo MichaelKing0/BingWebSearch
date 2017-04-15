@@ -1,0 +1,220 @@
+{
+  "_type":"SearchResponse",
+  "webPages":{
+    "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=HTLi1_rE3E6eBMSYcDy-DvRVcRKd4sKDS-WnSJvtK80&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3dsite%253atransfermarkt.co.uk%2bintitle%253aIceland%2bClub%2527s%2bprofile&p=DevEx,5308.1",
+    "totalEstimatedMatches":4670,
+    "value":[
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.0",
+        "name":"Iceland - Club's profile | Transfermarkt",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=MY5i9hxlcMuvkRUH4XaYOelfxB4TZ3LeNEcgc5hoU2E&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2fisland%2fstartseite%2fverein%2f3574&p=DevEx,5066.1",
+        "displayUrl":"www.transfermarkt.co.uk\/island\/startseite\/verein\/3574",
+        "snippet":"The club's landing page - find all relevant information like the actual squad, relevant news, recent rumours and the most important information on the club's performance.",
+        "dateLastCrawled":"2017-04-06T23:45:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.1",
+        "name":"Iceland U19 - Club's profile | Transfermarkt",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=VqW7wlcsTh8mZfss-EbFPaRbnAFO3gvK74C5XoK93pk&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2fisland-u19%2fstartseite%2fverein%2f25785&p=DevEx,5080.1",
+        "displayUrl":"www.transfermarkt.co.uk\/island-u19\/startseite\/verein\/25785",
+        "snippet":"The squad overview can be embedded on the own homepage via iframe. Please click the button \"Send inquiry\" which opens a new e-mail message. Please add the homepage on ...",
+        "dateLastCrawled":"2017-04-02T10:21:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.2",
+        "name":"Football transfers, rumours, market values, news and ...",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=tdFeZB-rFBzWZw18IZ8YAxnezMqZP92TPRvbH4kty5c&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2f&p=DevEx,5102.1",
+        "displayUrl":"www.transfermarkt.co.uk",
+        "snippet":"Profile Settings Log out Transfermarkt provides actual information on football transfers, transfer rumours, market values news and statistics. Spotlight Latest ...",
+        "dateLastCrawled":"2017-04-08T17:37:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.3",
+        "name":"Iceland - Market value analysis | Transfermarkt",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=hK6T2-CmHTyBB7klsjShBWKi4zgvL2BDJH6IKmsN5Lg&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2fisland%2fmarktwertanalyse%2fverein%2f3574&p=DevEx,5114.1",
+        "displayUrl":"www.transfermarkt.co.uk\/island\/marktwertanalyse\/verein\/3574",
+        "snippet":"DE AT CH COM.TR IT PL CO.UK ES NL PT TV ≡ Menu; News . Recent news. All news ; Transfer ticker What's happening today",
+        "dateLastCrawled":"2017-02-18T16:36:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.4",
+        "name":"Iceland - Popularity ranking - Clubs | Transfermarkt",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=rQYuN6RWlG5mkqOzS8roorrZgeacEzkwCvzkzV2S8Ds&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2ficeland%2fverein%2fbeliebtheit%2f3574&p=DevEx,5127.1",
+        "displayUrl":"www.transfermarkt.co.uk\/iceland\/verein\/beliebtheit\/3574",
+        "snippet":"User profile Scouting tool; Profile photo; Favorites; Forum; Notifications; Apply as mentor or data scout Apply as expert ... Club's profile. Iceland: Popularity",
+        "dateLastCrawled":"2017-04-08T12:01:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.5",
+        "name":"Netherlands - Iceland, Sep 3, 2015 - European Qualifiers ...",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=97FWpoe6ELCFJuAIdEmbJMrlPMB6x2uhBSKrrGcXsj8&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2fspielbericht%2findex%2fspielbericht%2f2429484&p=DevEx,5140.1",
+        "displayUrl":"www.transfermarkt.co.uk\/spielbericht\/index\/spielbericht\/2429484",
+        "snippet":"User profile ; Scouting tool; Profile photo; Favorites; Forum; Notifications; Apply as mentor or data scout ...",
+        "dateLastCrawled":"2017-02-20T13:55:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.6",
+        "name":"Iceland - Squad's performance data | Transfermarkt",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=A93taPAn9VyUnTMdLOLo4ZIqF3JBBXG4RrSsGD7rbME&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2fisland%2fleistungsdaten%2fverein%2f3574&p=DevEx,5154.1",
+        "displayUrl":"www.transfermarkt.co.uk\/island\/leistungsdaten\/verein\/3574",
+        "snippet":"User profile Scouting tool; Profile photo; Favorites ... Club's name; Titles & Victories; Information & facts; ... Squad Iceland . Club ...",
+        "dateLastCrawled":"2017-04-09T09:33:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.7",
+        "name":"Iceland - Matchplan 14\/15 | Transfermarkt",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=-zRHv7xZGA-5smWILGEqsYPoIhZiHoubxjkR3cz9n4I&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2ficeland%2fspielplan%2fverein%2f3574%2fsaison_id%2f2014&p=DevEx,5166.1",
+        "displayUrl":"www.transfermarkt.co.uk\/iceland\/spielplan\/verein\/3574\/saison_id\/2014",
+        "snippet":"User profile Scouting tool; Profile photo; Favorites; Forum; ... Club's name; Titles & Victories; Information & facts; Links; History. History of coat of arms upload;",
+        "dateLastCrawled":"2017-02-26T18:37:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.8",
+        "name":"England - Iceland, Jun 27, 2016 - EURO 2016 - Match sheet ...",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=OeASkktHcuO8FT0AU_xk5YpAygxFM5WGz0OTJQwpd-A&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2fspielbericht%2findex%2fspielbericht%2f2701345&p=DevEx,5178.1",
+        "displayUrl":"www.transfermarkt.co.uk\/spielbericht\/index\/spielbericht\/2701345",
+        "snippet":"Profile Settings Log out EURO 2016. England. ENG. Last 16 | Mon, Jun 27, 2016 | 8:00 PM . Last 16 Jun 27, 2016 8:00 PM . 1:2 (1: 2) Allianz Riviera | Attendance: 33 ...",
+        "dateLastCrawled":"2017-03-30T17:37:00"
+      },
+      {
+        "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.9",
+        "name":"Kazakhstan - Iceland, Mar 28, 2015 - European Qualifiers ...",
+        "url":"http:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=_yOyrZFSck1soGIPjHqQjAWONdyeh_gCVzYR4MGOzCY&v=1&r=http%3a%2f%2fwww.transfermarkt.co.uk%2fspielbericht%2findex%2fspielbericht%2f2429438&p=DevEx,5190.1",
+        "displayUrl":"www.transfermarkt.co.uk\/spielbericht\/index\/spielbericht\/2429438",
+        "snippet":"Profile Settings Log out European Qualifiers. Kazakhstan. KAZ. group A | Sat, Mar 28, 2015 | 3:00 PM . group A Mar 28, 2015 3:00 PM . 0:3 (0: 2) Astana Arena ...",
+        "dateLastCrawled":"2017-02-15T07:15:00"
+      }
+    ]
+  },
+  "relatedSearches":{
+    "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#RelatedSearches",
+    "value":[
+      {
+        "text":"iceland clubs girls",
+        "displayText":"iceland clubs girls",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=U-Eurh7AAQchxrjKB10OdB2ZMCJFMLuKe3_tnKwS4q8&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3diceland%2bclubs%2bgirls&p=DevEx,5309.1"
+      },
+      {
+        "text":"iceland bars and clubs",
+        "displayText":"iceland bars and clubs",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=2aIh-TXjl9ChP5A8s6If-GOMOiatYSTO7qFEUifcX2A&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3diceland%2bbars%2band%2bclubs&p=DevEx,5310.1"
+      },
+      {
+        "text":"iceland club card",
+        "displayText":"iceland club card",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=Zig4ZCKUoLI_JPK5GuA62r2253XogOOPf8du0HOTcqs&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3diceland%2bclub%2bcard&p=DevEx,5311.1"
+      },
+      {
+        "text":"iceland club scene",
+        "displayText":"iceland club scene",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=0BzpyC_haFSdXA4w2UGa2SYDzloTLvcbKadXs62nVLI&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3diceland%2bclub%2bscene&p=DevEx,5312.1"
+      },
+      {
+        "text":"information on iceland",
+        "displayText":"information on iceland",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=cQqjPRlnLtUx6bvu3W8ib23ryGdLjeEW_UtsVY_1xac&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3dinformation%2bon%2biceland&p=DevEx,5313.1"
+      },
+      {
+        "text":"iceland stores",
+        "displayText":"iceland stores",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=a7V4KZuy5MKEMXmpLAADfigvSswQFnaYw5Z2tXAUGz0&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3diceland%2bstores&p=DevEx,5314.1"
+      },
+      {
+        "text":"iceland's delivery",
+        "displayText":"iceland's delivery",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=cklQ9KCIhIgSO67ZQUn2DkGB2bLLlsSTtoMjmkf5qBA&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3diceland%2527s%2bdelivery&p=DevEx,5315.1"
+      },
+      {
+        "text":"iceland tours",
+        "displayText":"iceland tours",
+        "webSearchUrl":"https:\/\/www.bing.com\/cr?IG=37F44609D67847B49920B9EF89E3D437&CID=23728360232D6E900B59890522CA6FE1&rd=1&h=pjc3IN5H3foTFfqJnM61A6B0xf18KtvhLggntH3Z4A4&v=1&r=https%3a%2f%2fwww.bing.com%2fsearch%3fq%3diceland%2btours&p=DevEx,5316.1"
+      }
+    ]
+  },
+  "rankingResponse":{
+    "mainline":{
+      "items":[
+        {
+          "answerType":"WebPages",
+          "resultIndex":0,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.0"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":1,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.1"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":2,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.2"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":3,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.3"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":4,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.4"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":5,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.5"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":6,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.6"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":7,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.7"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":8,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.8"
+          }
+        },
+        {
+          "answerType":"WebPages",
+          "resultIndex":9,
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#WebPages.9"
+          }
+        }
+      ]
+    },
+    "sidebar":{
+      "items":[
+        {
+          "answerType":"RelatedSearches",
+          "value":{
+            "id":"https:\/\/api.cognitive.microsoft.com\/api\/v5\/#RelatedSearches"
+          }
+        }
+      ]
+    }
+  }
+}

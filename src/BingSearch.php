@@ -4,14 +4,19 @@ namespace MichaelKing0\BingWebSearch;
 
 class BingSearch extends WebSearch
 {
+    // amount of results the client wants returned
     protected $amountOfResults = 1;
+
+    // api settings
+    protected $count = 10;
+    protected $offset = 0;
 
     public function __construct($accountKey, $handler = null)
     {
         parent::__construct($handler);
 
         $this->additionalHeaders = [
-            "Authorization" => "Basic " . base64_encode($accountKey . ":" . $accountKey)
+            "Ocp-Apim-Subscription-Key" => $accountKey
         ];
     }
 
@@ -21,42 +26,63 @@ class BingSearch extends WebSearch
         return $this;
     }
 
+    public function setCount($count)
+    {
+        $this->count = $count;
+        return $this;
+    }
+
+    public function setOffset($offset)
+    {
+        $this->offset = $offset;
+        return $this;
+    }
+
+    private function removeFormatting($string)
+    {
+        $string = preg_replace('/\<.*?\>/', '', $string);
+        $string = html_entity_decode($string);
+        return $string;
+    }
+
     public function search($phrase, $urlPattern = null, $inTitle = null, $notInTitle = null, $notInUrlPattern = null)
     {
-        $url = 'https://api.datamarket.azure.com/Bing/Search/v1/Web?Query=%27'. urlencode($phrase) .'%27';
+        $url = 'https://api.cognitive.microsoft.com/bing/v5.0/search?q='. urlencode($phrase) . '&count=' . $this->count . '&offset=' . $this->offset;
 
         $response = $this->makeRequest($url);
-        $xml = simplexml_load_string($response);
+
+        $json = json_decode($response);
 
         $results = [];
 
-        foreach ($xml->entry as $entry) {
-            $data = $entry->content->children('http://schemas.microsoft.com/ado/2007/08/dataservices/metadata')[0];
-            $data = $data->children('http://schemas.microsoft.com/ado/2007/08/dataservices');
+        foreach ($json->webPages->value as $entry) {
+
+            $url = 'http://' . $this->removeFormatting($entry->displayUrl);
+            $title = $this->removeFormatting($entry->name);
 
             if ($urlPattern) {
-                if (!preg_match($urlPattern, $data->Url)) {
+                if (!preg_match($urlPattern, $url)) {
                     continue;
                 }
             }
             if ($inTitle) {
-                if (strpos($data->Title, $inTitle) === false) {
+                if (strpos($title, $inTitle) === false) {
                     continue;
                 }
             }
             if ($notInTitle) {
-                if (strpos($data->Title, $notInTitle) !== false) {
+                if (strpos($title, $notInTitle) !== false) {
                     continue;
                 }
             }
             if ($notInUrlPattern) {
-                if (preg_match($notInUrlPattern, $data->Url)) {
+                if (preg_match($notInUrlPattern, $url)) {
                     continue;
                 }
             }
 
             // if we make it this far, this is the entry we want. Return the URL
-            $results[] = (string)$data->Url;
+            $results[] = (string)$url;
         }
 
         if (count($results)) {

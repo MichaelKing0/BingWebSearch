@@ -17,13 +17,13 @@ class BingSearchTest extends TestCase
         parent::setUp();
 
         $mock = new MockHandler([
-            new Response(200, [], file_get_contents(__DIR__ . '/BingSearchIcelandResponse.xml'))
+            new Response(200, [], file_get_contents(__DIR__ . '/BingSearchIcelandResponse.json'))
         ]);
 
         $this->bingSearch = new BingSearch('test', $mock);
     }
 
-    public function testSearch()
+    public function testSearchBasic()
     {
         $this->assertEquals(
             'http://www.transfermarkt.co.uk/island/startseite/verein/3574',
@@ -34,23 +34,23 @@ class BingSearchTest extends TestCase
     public function testSearchWithUrlPattern()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk/iceland-u21/startseite/verein/22414',
-            $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', '/\/22414$/')
+            'http://www.transfermarkt.co.uk/island/marktwertanalyse/verein/3574',
+            $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', '/marktwertanalyse\/verein\/3574/')
         );
     }
 
     public function testSearchWithInTitle()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk/iceland-u17/startseite/verein/26034',
-            $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', null, 'U17')
+            'http://www.transfermarkt.co.uk/island/marktwertanalyse/verein/3574',
+            $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', null, 'Market value analysis')
         );
     }
 
     public function testSearchWithNotInTitle()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk/',
+            'http://www.transfermarkt.co.uk',
             $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', null, null, 'Iceland')
         );
     }
@@ -64,12 +64,9 @@ class BingSearchTest extends TestCase
 
     public function testSearchWithMoreResults()
     {
-        $result = $this->bingSearch->setAmountOfResults(5)->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile');
+        $result = $this->bingSearch->setAmountOfResults(2)->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile');
 
         $this->assertEquals('http://www.transfermarkt.co.uk/island/startseite/verein/3574', $result[0]);
-        $this->assertEquals('http://www.transfermarkt.co.uk/iceland-u21/startseite/verein/22414', $result[1]);
-        $this->assertEquals('http://www.transfermarkt.co.uk/iceland-u17/startseite/verein/26034', $result[2]);
-        $this->assertEquals('http://www.transfermarkt.co.uk/', $result[3]);
-        $this->assertEquals('http://www.transfermarkt.co.uk/island-u19/startseite/verein/25785', $result[4]);
+        $this->assertEquals('http://www.transfermarkt.co.uk/island-u19/startseite/verein/25785', $result[1]);
     }
 }
