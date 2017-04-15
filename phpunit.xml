@@ -1,0 +1,7 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="BingWebSearch">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
