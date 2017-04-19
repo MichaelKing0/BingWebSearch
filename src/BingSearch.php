@@ -72,6 +72,9 @@ class BingSearch extends WebSearch
         $results = [];
 
         foreach ($json->webPages->value as $entry) {
+            if (count($results) >= $this->amountOfResults) {
+                break;
+            }
 
             $url = $this->removeFormatting($entry->displayUrl);
             if (strpos($url, 'http') !== 0) {
