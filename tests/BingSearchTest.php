@@ -50,7 +50,7 @@ class BingSearchTest extends TestCase
     public function testSearchWithNotInTitle()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk',
+            'http://www.transfermarkt.co.uk/',
             $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', null, null, 'Iceland')
         );
     }

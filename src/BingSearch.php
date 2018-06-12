@@ -76,7 +76,11 @@ class BingSearch extends WebSearch
                 break;
             }
 
-            $url = $this->removeFormatting($entry->displayUrl);
+            $url = $this->removeFormatting($entry->url);
+            $chunks = parse_url($url);
+            parse_str($chunks['query'], $vars);
+            $url = $vars['r'];
+
             if (strpos($url, 'http') !== 0) {
                 $url = 'http://' . $url;
             }
