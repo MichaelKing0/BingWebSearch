@@ -26,7 +26,7 @@ class BingSearchTest extends TestCase
     public function testSearchBasic()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk/island/startseite/verein/3574',
+            'https://www.transfermarkt.co.uk/island/startseite/verein/3574',
             $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile')
         );
     }
@@ -34,15 +34,15 @@ class BingSearchTest extends TestCase
     public function testSearchWithUrlPattern()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk/island/marktwertanalyse/verein/3574',
-            $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', '/marktwertanalyse\/verein\/3574/')
+            'https://www.transfermarkt.co.uk/island-u17/marktwertanalyse/verein/26034',
+            $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', '/marktwertanalyse\/verein\/26034/')
         );
     }
 
     public function testSearchWithInTitle()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk/island/marktwertanalyse/verein/3574',
+            'https://www.transfermarkt.co.uk/island-u17/marktwertanalyse/verein/26034',
             $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', null, 'Market value analysis')
         );
     }
@@ -50,7 +50,7 @@ class BingSearchTest extends TestCase
     public function testSearchWithNotInTitle()
     {
         $this->assertEquals(
-            'http://www.transfermarkt.co.uk/',
+            'https://www.transfermarkt.co.uk/',
             $this->bingSearch->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile', null, null, 'Iceland')
         );
     }
@@ -66,8 +66,8 @@ class BingSearchTest extends TestCase
     {
         $result = $this->bingSearch->setAmountOfResults(2)->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile');
 
-        $this->assertEquals('http://www.transfermarkt.co.uk/island/startseite/verein/3574', $result[0]);
-        $this->assertEquals('http://www.transfermarkt.co.uk/island-u19/startseite/verein/25785', $result[1]);
+        $this->assertEquals('https://www.transfermarkt.co.uk/island/startseite/verein/3574', $result[0]);
+        $this->assertEquals('https://www.transfermarkt.co.uk/', $result[1]);
     }
 
     public function testSearchWithCustomCallback()
@@ -91,7 +91,7 @@ class BingSearchTest extends TestCase
             ->setAmountOfResults(2)
             ->search('site:transfermarkt.co.uk intitle:Iceland Club\'s profile');
 
-        $this->assertEquals('http://www.transfermarkt.co.uk/island/startseite/verein/3574', $result[0]);
-        $this->assertEquals('http://www.transfermarkt.co.uk/island-u19/startseite/verein/25785', $result[1]);
+        $this->assertEquals('https://www.transfermarkt.co.uk/island/startseite/verein/3574', $result[0]);
+        $this->assertEquals('https://www.transfermarkt.co.uk/', $result[1]);
     }
 }
